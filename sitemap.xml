@@ -4,92 +4,92 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/index.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/index.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/archives.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/tags.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/categories.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/07/2013fall-second-article/</loc>
+<loc>http:///mde.cu.cc/posts/2013/07/2013fall-second-article/</loc>
 <lastmod>2013-07-31T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/2013fall-first-article/</loc>
+<loc>http:///mde.cu.cc/posts/2013/04/2013fall-first-article/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/2013fall-third-article/</loc>
+<loc>http:///mde.cu.cc/posts/2013/04/2013fall-third-article/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/say-ho/</loc>
+<loc>http:///mde.cu.cc/posts/2013/04/say-ho/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/wen-zhang-biao-ti/</loc>
+<loc>http:///mde.cu.cc/posts/2013/04/wen-zhang-biao-ti/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/2013fall.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/category/2013fall.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/fun.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/category/fun.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/wen-zhang-lei-bie.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/category/wen-zhang-lei-bie.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/lee.html</loc>
-<lastmod>2013-08-01T01:19:01-00:00</lastmod>
+<loc>http:///mde.cu.cc/author/lee.html</loc>
+<lastmod>2013-08-01T01:29:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
