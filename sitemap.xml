@@ -4,78 +4,78 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/index.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/index.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/archives.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/tags.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/categories.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/2013fall-first-article/</loc>
+<loc>http://kmollee.github.io/posts/2013/04/2013fall-first-article/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/say-ho/</loc>
+<loc>http://kmollee.github.io/posts/2013/04/say-ho/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/posts/2013/04/wen-zhang-biao-ti/</loc>
+<loc>http://kmollee.github.io/posts/2013/04/wen-zhang-biao-ti/</loc>
 <lastmod>2013-04-18T00:00:00-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/2013fall.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/category/2013fall.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/fun.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/category/fun.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/wen-zhang-lei-bie.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/category/wen-zhang-lei-bie.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/lee.html</loc>
-<lastmod>2013-07-31T13:33:23-00:00</lastmod>
+<loc>http://kmollee.github.io/author/lee.html</loc>
+<lastmod>2013-07-31T14:14:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
