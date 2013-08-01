@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mde.cu.cc/index.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/archives.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/tags.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/categories.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -89,77 +89,77 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mde.cu.cc/category/2013fall.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/category/fun.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/category/misc.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/category/wen-zhang-lei-bie.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/tag/.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://mde.cu.cc/tag/github.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://mde.cu.cc/tag/pelican.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://mde.cu.cc/tag/functional.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/tag/python.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mde.cu.cc/tag/pelican.html</loc>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/tag/misc.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mde.cu.cc/tag/functional.html</loc>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mde.cu.cc/tag/github.html</loc>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mde.cu.cc/author/lee.html</loc>
-<lastmod>2013-08-01T16:23:23-00:00</lastmod>
+<lastmod>2013-08-01T16:40:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
