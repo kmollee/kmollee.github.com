@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog</title><link href="http://mde.cu.cc/" rel="alternate"></link><link href="http://mde.cu.cc/atom.xml" rel="self"></link><id>http://mde.cu.cc/</id><updated>2013-08-01T11:55:06+08:00</updated><entry><title>test new fucntion</title><link href="http://mde.cu.cc/posts/2013/08/test-new-fucntion/" rel="alternate"></link><updated>2013-08-01T11:55:06+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-08-01:posts/2013/08/test-new-fucntion/</id><summary type="html">&lt;p&gt;The Video Tag&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="/static/image/galaxy.jpg" src="/static/image/galaxy.jpg" /&gt;
+&lt;/div&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="http://www.youtube.com/watch?v=JRfuAukYTKg"&gt;&lt;img alt="http://1.bp.blogspot.com/-3hzvjY9_XOY/Tkd4tpkK87I/AAAAAAAAAKI/COQDx5-eXWA/s200/Titanium.jpg" src="http://1.bp.blogspot.com/-3hzvjY9_XOY/Tkd4tpkK87I/AAAAAAAAAKI/COQDx5-eXWA/s200/Titanium.jpg" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="youtube" align="center"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/dfI_DnGazwg" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class="sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;Sidebar Title&lt;/p&gt;
+&lt;p class="sidebar-subtitle"&gt;Optional Sidebar Subtitle&lt;/p&gt;
+&lt;p class="last"&gt;Subsequent indented lines comprise
+the body of the sidebar, and are
+interpreted as body elements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Topic Title&lt;/p&gt;
+&lt;p&gt;Subsequent indented lines comprise
+the body of the topic, and are
+interpreted as body elements.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="functional"></category><category term=""></category></entry><entry><title>github page + pelican</title><link href="http://mde.cu.cc/posts/2013/08/github%20page%20+%20pelican/" rel="alternate"></link><updated>2013-08-01T10:58:04+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-08-01:posts/2013/08/github page + pelican/</id><summary type="html">&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#what-is-pelican" id="id1"&gt;What is Pelican?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#install-pelican-windows" id="id2"&gt;Install Pelican(windows)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#start-pelican" id="id3"&gt;Start Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#code-highlight" id="id4"&gt;Code highlight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#use-theme" id="id5"&gt;use theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#dev-server" id="id6"&gt;dev server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-pelican"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;What is Pelican?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pelican是一個靜態博客生成器，具有常見博客系統如WordPress的基本功能，在功能、速度、開放性上更符合Geek們的口味。&lt;/p&gt;
+&lt;p&gt;靜態博客的優點：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;No-SQL。原始文章再也不是數據庫表中的一個值，而是實實在在可以用任意編輯器編輯的純文本文件，撰寫、修改文章都不再依賴專門工具。&lt;/li&gt;
+&lt;li&gt;源文件支持多種標記語言（與轉換引擎相關），簡化文章編輯。&lt;/li&gt;
+&lt;li&gt;速度快。不再需要查詢數據庫，直接讀取靜態html，因此速度飛快。&lt;/li&gt;
+&lt;li&gt;本地（同步）備份網站，網站遷移部署更靈活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;靜態博客的缺點：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;評論依賴外部服務。依賴第三方評論系統。&lt;/li&gt;
+&lt;li&gt;修改設置，修改、發表文章大部分情況下需要編譯整個網站。&lt;/li&gt;
+&lt;li&gt;通常依賴命令行工具，具有一定技術門檻。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pelican的功能與特點：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;基於python環境，如Jinja2、pygments&lt;/li&gt;
+&lt;li&gt;標記語言支持：reStructuredText、Markdown、AsciiDoc，支持自定義&lt;/li&gt;
+&lt;li&gt;命令行操作&lt;/li&gt;
+&lt;li&gt;主題/插件自定義&lt;/li&gt;
+&lt;li&gt;文章可發佈多種語言版本&lt;/li&gt;
+&lt;li&gt;Atom/RSS訂閱&lt;/li&gt;
+&lt;li&gt;多種常用第三方服務集成：Github、Disqus、Google Analytics、Twitter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="install-pelican-windows"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;Install Pelican(windows)&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;我是在windows底下測試，使用 &lt;a class="reference external" href="http://www.pip-installer.org"&gt;pip&lt;/a&gt; 安裝package&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+pip install pelican
+pip install Markdown
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="start-pelican"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Start Pelican&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;首先創建一個博客目錄用於存放所有的文件,然後執行 &lt;code&gt;pelican-quickstart&lt;/code&gt; 回答幾個基本的問題，執行完畢在目錄下就生成了基礎的文件和目錄如下：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;content/，默認posts文檔（*.rst *.md *.html等等）存放目錄&lt;/li&gt;
+&lt;li&gt;output/，默認靜態網站編譯輸出目錄，把該目錄下文件拷貝到任意開啟HTTPServer的目錄下並綁定好設置的域名即可訪問。&lt;/li&gt;
+&lt;li&gt;Makefile，pelican使用make進行基本操作，請仔細閱讀該文件，瞭解常用的make選項。&lt;/li&gt;
+&lt;li&gt;pelicanconf.py，pelican配置文件&lt;/li&gt;
+&lt;li&gt;publishconf.py，發佈博客的配置文件，由make調用，可以自行設置&lt;/li&gt;
+&lt;li&gt;develop_server.sh，測試pelican的腳本，由make調用，一般不需修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;常用的make選項：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;make html，用pelican生成靜態網頁&lt;/li&gt;
+&lt;li&gt;make remove，刪除輸出目錄的文件&lt;/li&gt;
+&lt;li&gt;make serve，用 &lt;code&gt;python -m SimpleHTTPServer&lt;/code&gt; 在輸出目錄運行HTTP服務，可以從 &lt;code&gt;localhost:8000&lt;/code&gt; 訪問。&lt;/li&gt;
+&lt;li&gt;make regenerate，自動檢測文件更新並重新生成html&lt;/li&gt;
+&lt;li&gt;make devserver，運行HTTP服務並檢測文件更新，一旦更新就重新生成html&lt;/li&gt;
+&lt;li&gt;make publish，發佈靜態網站&lt;/li&gt;
+&lt;li&gt;make github，發佈到 &lt;code&gt;gh-pages&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="code-highlight"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;Code highlight&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;pelican使用pygments來處理代碼高亮&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;reST格式高亮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;reST格式可以採用`code-block`原語，編輯時注意前後空行以及縮進與必要的空格（python在這方面很嚴格）&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;code-block&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt; identifier
+
+   &amp;lt;indented code block goes here&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;輸出的html代碼為：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;highlight&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;..&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ow&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;code-block&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;::&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; identifier
+
+   &lt;span class="ni"&gt;&amp;amp;lt;&lt;/span&gt;indented code block goes here&lt;span class="ni"&gt;&amp;amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;注意這裡CSS類是`highlight`。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Markdown高亮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Markdown需要經過python-markdown處理，並且需要codehilite擴展的支持，示例如下：&lt;/p&gt;
+&lt;p&gt;方案一：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Some text.
+
+    :::python
+    def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;輸出的html代碼為：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Some text.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;codehilite&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;pre&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;方案二：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Some text.
+
+&lt;span class="s"&gt;```python&lt;/span&gt;
+&lt;span class="s"&gt;def factorial(n):&lt;/span&gt;
+&lt;span class="s"&gt;if n == 0:&lt;/span&gt;
+&lt;span class="s"&gt;    return 1&lt;/span&gt;
+&lt;span class="s"&gt;else:&lt;/span&gt;
+&lt;span class="s"&gt;    return n * factorial(n - 1)&lt;/span&gt;
+&lt;span class="s"&gt;```&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;兩種方案輸出的CSS類都是 &lt;cite&gt;codehilite&lt;/cite&gt; 而不是 &lt;cite&gt;highlight&lt;/cite&gt;，另外第一種方案必須縮進，第二種則不必。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="use-theme"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;use theme&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;下載網友分享的自定義主題：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-themes BLOGDIR/themes
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;在 &lt;code&gt;pelicanconf.py&lt;/code&gt; 中添加 &lt;code&gt;THEME = &amp;quot;./themes/THEMENAME&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dev-server"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;dev server&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;移至你的pelican project裡的 output
+並執行cmd 使其可藉由 &lt;code&gt;localhost:8000&lt;/code&gt; 端口開啟&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;python -m http.server
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="pelican"></category><category term="github"></category><category term="python"></category><category term=""></category></entry><entry><title>first article</title><link href="http://mde.cu.cc/posts/2013/08/first-article/" rel="alternate"></link><updated>2013-08-01T10:23:23+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-08-01:posts/2013/08/first-article/</id><summary type="html">&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pelican" id="id13"&gt;Pelican是什么&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id1" id="id14"&gt;安装Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id2" id="id15"&gt;启动博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id3" id="id16"&gt;编辑文章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#meta-data" id="id17"&gt;Meta-data&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id4" id="id18"&gt;代码高亮&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id5" id="id19"&gt;内链&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id6" id="id20"&gt;基本设置&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id7" id="id21"&gt;绝对链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id8" id="id22"&gt;使用主题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id9" id="id23"&gt;从其它博客导入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id10" id="id24"&gt;多语言&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id11" id="id25"&gt;常见问题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#id12" id="id26"&gt;参考资源&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pelican"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id13"&gt;Pelican是什么&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pelican是一个静态博客生成器，具有常见博客系统如WordPress的基本功能，在功能、速度、开放性上更符合Geek们的口味。&lt;/p&gt;
+&lt;p&gt;静态博客的优点：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;No-SQL。原始文章再也不是数据库表中的一个值，而是实实在在可以用任意编辑器编辑的纯文本文件，撰写、修改文章都不再依赖专门工具。&lt;/li&gt;
+&lt;li&gt;源文件支持多种标记语言（与转换引擎相关），简化文章编辑。&lt;/li&gt;
+&lt;li&gt;速度快。不再需要查询数据库，直接读取静态html，因此速度飞快。&lt;/li&gt;
+&lt;li&gt;本地（同步）备份网站，网站迁移部署更灵活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;静态博客的缺点：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;评论依赖外部服务。依赖第三方评论系统。&lt;/li&gt;
+&lt;li&gt;修改设置，修改、发表文章大部分情况下需要编译整个网站。&lt;/li&gt;
+&lt;li&gt;通常依赖命令行工具，具有一定技术门槛。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pelican的功能与特点：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;基于python环境，如Jinja2、pygments&lt;/li&gt;
+&lt;li&gt;标记语言支持：reStructuredText、Markdown、AsciiDoc，支持自定义&lt;/li&gt;
+&lt;li&gt;命令行操作&lt;/li&gt;
+&lt;li&gt;主题/插件自定义&lt;/li&gt;
+&lt;li&gt;文章可发布多种语言版本&lt;/li&gt;
+&lt;li&gt;Atom/RSS订阅&lt;/li&gt;
+&lt;li&gt;多种常用第三方服务集成：Github、Disqus、Google Analytics、Twitter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id14"&gt;安装Pelican&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;推荐在Linux或者Cygwin下使用Pelican，首先保证系统安装有python和 &lt;a class="reference external" href="http://www.pip-installer.org"&gt;pip&lt;/a&gt; 。官方文档推荐在virtualenv下安装Pelican，不过如果你没有用python开发的需求或者和我一样嫌麻烦，也可以直接安装：&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install Markdown
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id15"&gt;启动博客&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;首先创建一个博客目录用于存放所有的文件，比如 &lt;code&gt;~/pelicanblog&lt;/code&gt; ，然后执行 &lt;code&gt;pelican-quickstart&lt;/code&gt; 回答几个基本的问题，执行完毕在目录下就生成了基础的文件和目录如下：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;content/，默认posts文档（*.rst *.md *.html等等）存放目录&lt;/li&gt;
+&lt;li&gt;output/，默认静态网站编译输出目录，把该目录下文件拷贝到任意开启HTTPServer的目录下并绑定好设置的域名即可访问。&lt;/li&gt;
+&lt;li&gt;Makefile，pelican使用make进行基本操作，请仔细阅读该文件，了解常用的make选项。&lt;/li&gt;
+&lt;li&gt;pelicanconf.py，pelican配置文件&lt;/li&gt;
+&lt;li&gt;publishconf.py，发布博客的配置文件，由make调用，可以自行设置&lt;/li&gt;
+&lt;li&gt;develop_server.sh，测试pelican的脚本，由make调用，一般不需修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;常用的make选项：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;make html，用pelican生成静态网页&lt;/li&gt;
+&lt;li&gt;make remove，删除输出目录的文件&lt;/li&gt;
+&lt;li&gt;make serve，用 &lt;code&gt;python -m SimpleHTTPServer&lt;/code&gt; 在输出目录运行HTTP服务，可以从 &lt;code&gt;localhost:8000&lt;/code&gt; 访问。&lt;/li&gt;
+&lt;li&gt;make regenerate，自动检测文件更新并重新生成html&lt;/li&gt;
+&lt;li&gt;make devserver，运行HTTP服务并检测文件更新，一旦更新就重新生成html&lt;/li&gt;
+&lt;li&gt;make publish，发布静态网站&lt;/li&gt;
+&lt;li&gt;make github，发布到 &lt;code&gt;gh-pages&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id16"&gt;编辑文章&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="meta-data"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id17"&gt;Meta-data&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;常用元数据(reST)：&lt;/p&gt;
+&lt;pre class="code text literal-block"&gt;
+:title: the post title
+:author: author of the post
+:date: publishing date/time, e.g. 2013-04-14 21:00
+:category: life/programming
+:tags: blog, tag
+:slug: use this to specify url of post, i.e. slug.html
+:summary: Short summary, displayed as a short description of post at index.html
+:status: draft/hidden/published
+&lt;/pre&gt;
+&lt;p&gt;处于draft状态的文章也会被转换为html但是会输出到 &lt;code&gt;outputdir/drafts/&lt;/code&gt; 而且不会出现在输出的任何页面中。当然你自己仍然可以通过地址 &lt;code&gt;http://domainname.com/drafts/slug.html&lt;/code&gt; 来访问。&lt;/p&gt;
+&lt;p&gt;Markdown也采用同样的元数据，不过形式为 &lt;code&gt;Title: title&lt;/code&gt; 。&lt;/p&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id18"&gt;代码高亮&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;pelican使用pygments来处理代码高亮&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;reST格式高亮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;reST格式可以采用`code-block`原语，编辑时注意前后空行以及缩进与必要的空格（python在这方面很严格）&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;..&lt;/span&gt; &lt;span class="ow"&gt;code-block&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt; identifier
+
+   &amp;lt;indented code block goes here&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;输出的html代码为：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;highlight&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;..&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ow&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;code-block&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;::&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; identifier
+
+   &lt;span class="ni"&gt;&amp;amp;lt;&lt;/span&gt;indented code block goes here&lt;span class="ni"&gt;&amp;amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;注意这里CSS类是`highlight`。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Markdown高亮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Markdown需要经过python-markdown处理，并且需要codehilite扩展的支持，示例如下：&lt;/p&gt;
+&lt;p&gt;方案一：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Some text.
+
+    :::python
+    def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;输出的html代码为：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Some text.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;codehilite&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;pre&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;方案二：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Some text.
+
+```python
+def factorial(n):
+if n == 0:
+    return 1
+else:
+    return n * factorial(n - 1)
+```
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;两种方案输出的CSS类都是`codehilite`而不是`highlight`，另外第一种方案必须缩进，第二种则不必。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id19"&gt;内链&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id20"&gt;基本设置&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="id7"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id21"&gt;绝对链接&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id8"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id22"&gt;使用主题&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;下载网友分享的自定义主题：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-themes BLOGDIR/themes
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;在 &lt;code&gt;pelicanconf.py&lt;/code&gt; 中添加 &lt;code&gt;THEME = &amp;quot;./themes/THEMENAME&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id9"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id23"&gt;从其它博客导入&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id10"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id24"&gt;多语言&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id11"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id25"&gt;常见问题&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;如何改变post链接地址？&lt;/li&gt;
+&lt;li&gt;如何快速同步到gh-pages?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先安装ghp-import&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install ghp-import
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pelican自带的Makefile已经添加了ghp-import支持，只需要执行以下命令即可：&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+make html
+make github
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id12"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id26"&gt;参考资源&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+</summary><category term="misc"></category><category term=""></category></entry><entry><title>2013fall second article</title><link href="http://mde.cu.cc/posts/2013/07/2013fall-second-article/" rel="alternate"></link><updated>2013-07-31T00:00:00+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-07-31:posts/2013/07/2013fall-second-article/</id><summary type="html">&lt;p&gt;這裡是內容&lt;/p&gt;</summary></entry><entry><title>2013fall first article</title><link href="http://mde.cu.cc/posts/2013/04/2013fall-first-article/" rel="alternate"></link><updated>2013-04-18T00:00:00+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-04-18:posts/2013/04/2013fall-first-article/</id><summary type="html">&lt;p&gt;這裡是內容&lt;/p&gt;</summary></entry><entry><title>2013fall third article</title><link href="http://mde.cu.cc/posts/2013/04/2013fall-third-article/" rel="alternate"></link><updated>2013-04-18T00:00:00+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-04-18:posts/2013/04/2013fall-third-article/</id><summary type="html">&lt;p&gt;這裡是內容&lt;/p&gt;</summary></entry><entry><title>say ho~</title><link href="http://mde.cu.cc/posts/2013/04/say-ho/" rel="alternate"></link><updated>2013-04-18T00:00:00+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-04-18:posts/2013/04/say-ho/</id><summary type="html">&lt;p&gt;這裡是內容&lt;/p&gt;</summary></entry><entry><title>文章標題</title><link href="http://mde.cu.cc/posts/2013/04/wen-zhang-biao-ti/" rel="alternate"></link><updated>2013-04-18T00:00:00+08:00</updated><author><name>Lee</name></author><id>tag:mde.cu.cc,2013-04-18:posts/2013/04/wen-zhang-biao-ti/</id><summary type="html">&lt;p&gt;這裡是內容123&lt;/p&gt;</summary></entry></feed>

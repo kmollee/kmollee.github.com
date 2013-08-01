@@ -7,6 +7,8 @@
   <title>first article</title>
   <meta name="author" content="Lee">
 
+    <link href="http://mde.cu.cc/atom.xml" type="application/atom+xml" rel="alternate"
+        title="blog Atom Feed" />
     
   
   <!-- http://t.co/dKP3o1e -->
@@ -30,17 +32,15 @@
   <h1><a href="http://mde.cu.cc/">blog</a></h1>
   </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://mde.cu.cc/" rel="subscribe-rss">RSS</a></li>
+  <li><a href="http://mde.cu.cc/atom.xml" rel="subscribe-rss">RSS</a></li>
   </ul>
 
-<!-- TODO: add search here
-<form action="" method="get">
+<form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:http://mde.cu.cc" />
+    <input type="hidden" name="q" value="site:mde.cu.cc" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
--->
 
 <ul class="main-navigation">
   <li><a href="http://mde.cu.cc/">Blog</a></li>
@@ -258,10 +258,6 @@ make github
   </p>    </footer>
   </article>
 
-    <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
-  </section>
   </div>
       <aside class="sidebar">
   <section>
@@ -298,7 +294,7 @@ make github
 
   <section>
   <h1>Tags</h1>
-      <a href="http://mde.cu.cc/tag/.html"></a>,      <a href="http://mde.cu.cc/tag/python.html">python</a>,      <a href="http://mde.cu.cc/tag/pelican.html">pelican</a>,      <a href="http://mde.cu.cc/tag/misc.html">misc</a>,      <a href="http://mde.cu.cc/tag/functional.html">functional</a>,      <a href="http://mde.cu.cc/tag/github.html">github</a>    </section>
+      <a href="http://mde.cu.cc/tag/.html"></a>,      <a href="http://mde.cu.cc/tag/python.html">python</a>,      <a href="http://mde.cu.cc/tag/functional.html">functional</a>,      <a href="http://mde.cu.cc/tag/misc.html">misc</a>,      <a href="http://mde.cu.cc/tag/github.html">github</a>,      <a href="http://mde.cu.cc/tag/pelican.html">pelican</a>    </section>
 
   
                     
@@ -353,26 +349,5 @@ make github
   Copyright &copy; 2013 - Lee -
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
-      <script type="text/javascript">
-	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-	    try {
-	        var pageTracker = _gat._getTracker("UA-42879522-1");
-	    pageTracker._trackPageview();
-	    } catch(err) {}
-	</script>
-	<script type="text/javascript">
-	            var disqus_identifier = 'http://mde.cu.cc/posts/2013/08/first-article/';
-          var disqus_url = 'http://mde.cu.cc/posts/2013/08/first-article/';
-	  var disqus_title = 'first article';
-	  	  var disqus_shortname = 'kmollee';
-	  (function() {
-	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	   })();
-	</script>
-</body>
+  </body>
 </html>
