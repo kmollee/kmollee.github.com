@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+  <meta name="author" content="Lee">
+
+    
+  
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="/favicon.png" rel="icon">
+  <link href="/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="/theme/js/modernizr-2.0.js"></script>
+  <script src="/theme/js/ender.js"></script>
+  <script src="/theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head><body>
+  <header role="banner"><hgroup>
+  <h1><a href="/">blog</a></h1>
+  </hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/" rel="subscribe-rss">RSS</a></li>
+  </ul>
+
+<!-- TODO: add search here
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+-->
+
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+      <li><a href="/archives.html">Archives</a></li>
+            <!-- TODO: add categories here? -->
+  </ul></nav>
+  <div id="main">
+    <div id="content">
+      <div>
+  <article class="hentry" role="article">
+    <header>
+          <h1 class="entry-title">test</h1>
+          <p class="meta"><time datetime="2013-08-01T10:58:04" pubdate>2013-08-01</time></p>
+</header>
+
+  <div class="entry-content"><div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-pelican" id="id1">What is Pelican?</a></li>
+<li><a class="reference internal" href="#install-pelican-windows" id="id2">Install Pelican(windows)</a></li>
+<li><a class="reference internal" href="#start-pelican" id="id3">Start Pelican</a></li>
+</ul>
+</div>
+<div class="section" id="what-is-pelican">
+<h2><a class="toc-backref" href="#id1">What is Pelican?</a></h2>
+<p>Pelican是一個靜態博客生成器，具有常見博客系統如WordPress的基本功能，在功能、速度、開放性上更符合Geek們的口味。</p>
+<p>靜態博客的優點：</p>
+<ul class="simple">
+<li>No-SQL。原始文章再也不是數據庫表中的一個值，而是實實在在可以用任意編輯器編輯的純文本文件，撰寫、修改文章都不再依賴專門工具。</li>
+<li>源文件支持多種標記語言（與轉換引擎相關），簡化文章編輯。</li>
+<li>速度快。不再需要查詢數據庫，直接讀取靜態html，因此速度飛快。</li>
+<li>本地（同步）備份網站，網站遷移部署更靈活。</li>
+</ul>
+<p>靜態博客的缺點：</p>
+<ul class="simple">
+<li>評論依賴外部服務。依賴第三方評論系統。</li>
+<li>修改設置，修改、發表文章大部分情況下需要編譯整個網站。</li>
+<li>通常依賴命令行工具，具有一定技術門檻。</li>
+</ul>
+<p>Pelican的功能與特點：</p>
+<ul class="simple">
+<li>基於python環境，如Jinja2、pygments</li>
+<li>標記語言支持：reStructuredText、Markdown、AsciiDoc，支持自定義</li>
+<li>命令行操作</li>
+<li>主題/插件自定義</li>
+<li>文章可發佈多種語言版本</li>
+<li>Atom/RSS訂閱</li>
+<li>多種常用第三方服務集成：Github、Disqus、Google Analytics、Twitter</li>
+</ul>
+</div>
+<div class="section" id="install-pelican-windows">
+<h2><a class="toc-backref" href="#id2">Install Pelican(windows)</a></h2>
+<p>我是在windows底下測試，使用 <a class="reference external" href="http://www.pip-installer.org">pip</a> 安裝package</p>
+<pre class="code bash literal-block">
+pip install pelican
+pip install Markdown
+</pre>
+</div>
+<div class="section" id="start-pelican">
+<h2><a class="toc-backref" href="#id3">Start Pelican</a></h2>
+<p>首先創建一個博客目錄用於存放所有的文件,然後執行 <code>pelican-quickstart</code> 回答幾個基本的問題，執行完畢在目錄下就生成了基礎的文件和目錄如下：</p>
+<ul class="simple">
+<li>content/，默認posts文檔（*.rst *.md *.html等等）存放目錄</li>
+<li>output/，默認靜態網站編譯輸出目錄，把該目錄下文件拷貝到任意開啟HTTPServer的目錄下並綁定好設置的域名即可訪問。</li>
+<li>Makefile，pelican使用make進行基本操作，請仔細閱讀該文件，瞭解常用的make選項。</li>
+<li>pelicanconf.py，pelican配置文件</li>
+<li>publishconf.py，發佈博客的配置文件，由make調用，可以自行設置</li>
+<li>develop_server.sh，測試pelican的腳本，由make調用，一般不需修改</li>
+</ul>
+<p>常用的make選項：</p>
+<ul class="simple">
+<li>make html，用pelican生成靜態網頁</li>
+<li>make remove，刪除輸出目錄的文件</li>
+<li>make serve，用 <code>python -m SimpleHTTPServer</code> 在輸出目錄運行HTTP服務，可以從 <code>localhost:8000</code> 訪問。</li>
+<li>make regenerate，自動檢測文件更新並重新生成html</li>
+<li>make devserver，運行HTTP服務並檢測文件更新，一旦更新就重新生成html</li>
+<li>make publish，發佈靜態網站</li>
+<li>make github，發佈到 <code>gh-pages</code></li>
+</ul>
+</div>
+</div>
+    <footer>
+      <p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">Lee</span>
+  </span>
+  <time datetime="2013-08-01T10:58:04" pubdate>2013-08-01</time>    <span class="categories">
+        <a class="category" href="/tag/pelican.html">pelican</a>
+        <a class="category" href="/tag/github.html">github</a>
+        <a class="category" href="/tag/python.html">python</a>
+        <a class="category" href="/tag/.html"></a>
+      </span>
+  </p>    </footer>
+  </article>
+
+    <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+  </div>
+      <aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+            <li class="post">
+          <a href="/posts/2013/08/test/">test</a>
+      </li>
+            <li class="post">
+          <a href="/posts/2013/08/first-article/">first article</a>
+      </li>
+            <li class="post">
+          <a href="/posts/2013/07/2013fall-second-article/">2013fall second article</a>
+      </li>
+            <li class="post">
+          <a href="/posts/2013/04/2013fall-first-article/">2013fall first article</a>
+      </li>
+            <li class="post">
+          <a href="/posts/2013/04/2013fall-third-article/">2013fall third article</a>
+      </li>
+          </ul>
+  </section>
+    <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+              <li><a href="/category/2013fall.html">2013fall</a></li>
+              <li><a href="/category/fun.html">fun</a></li>
+              <li><a href="/category/misc.html">misc</a></li>
+              <li><a href="/category/wen-zhang-lei-bie.html">文章類別</a></li>
+          </ul>
+  </section>
+   
+
+  <section>
+  <h1>Tags</h1>
+      <a href="/tag/.html"></a>,      <a href="/tag/github.html">github</a>,      <a href="/tag/python.html">python</a>,      <a href="/tag/pelican.html">pelican</a>,      <a href="/tag/misc.html">misc</a>    </section>
+
+  
+                    
+  <section>
+    <h1>GitHub Repos</h1>
+    <ul id="gh_repos">
+      <li class="loading">Status updating...</li>
+    </ul>
+          <a href="https://github.com/kmollee">@kmollee</a> on GitHub
+        <script type="text/javascript">
+      $.domReady(function(){
+          if (!window.jXHR){
+              var jxhr = document.createElement('script');
+              jxhr.type = 'text/javascript';
+              jxhr.src = '/theme/js/jXHR.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(jxhr, s);
+          }
+
+          github.showRepos({
+              user: 'kmollee',
+              count: 5,
+              skip_forks: false,
+              target: '#gh_repos'
+          });
+      });
+    </script>
+    <script src="/theme/js/github.js" type="text/javascript"> </script>
+  </section>
+  
+    <section>
+        <h1>Social</h2>
+        <ul>
+            <li><a href="/" type="application/rss+xml" rel="alternate">RSS</a></li>
+                    <li><a href="#" target="_blank">You can add links in your config file</a></li>
+                    <li><a href="#" target="_blank">Another social link</a></li>
+                    <li><a href="https://github.com/kmollee" target="_blank">github</a></li>
+                </ul>
+    </section>
+      <section>
+        <h1>Blogroll</h2>
+        <ul>
+                    <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+                    <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                    <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                    <li><a href="http://blog.kmol.info" target="_blank">blogkmol</a></li>
+                </ul>
+    </section>
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Lee -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+      <script type="text/javascript">
+	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+	    try {
+	        var pageTracker = _gat._getTracker("UA-42879522-1");
+	    pageTracker._trackPageview();
+	    } catch(err) {}
+	</script>
+	<script type="text/javascript">
+	            var disqus_identifier = '/posts/2013/08/test/';
+          var disqus_url = '/posts/2013/08/test/';
+	  var disqus_title = 'test';
+	  	  var disqus_shortname = 'kmollee';
+	  (function() {
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	   })();
+	</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>blog</title>
+  <title>github page + pelican</title>
   <meta name="author" content="Lee">
 
     
@@ -49,45 +49,10 @@
   </ul></nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
-    	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="http://mde.cu.cc/posts/2013/08/test-new-fucntion/">test new fucntion</a>
-      </h1>
-          <p class="meta"><time datetime="2013-08-01T11:55:06" pubdate>2013-08-01</time></p>
-</header>
-
-  <div class="entry-content"><p>The Video Tag</p>
-<div class="figure">
-<img alt="/static/image/galaxy.jpg" src="/static/image/galaxy.jpg" />
-</div>
-<div class="figure">
-<a class="reference external image-reference" href="http://www.youtube.com/watch?v=JRfuAukYTKg"><img alt="http://1.bp.blogspot.com/-3hzvjY9_XOY/Tkd4tpkK87I/AAAAAAAAAKI/COQDx5-eXWA/s200/Titanium.jpg" src="http://1.bp.blogspot.com/-3hzvjY9_XOY/Tkd4tpkK87I/AAAAAAAAAKI/COQDx5-eXWA/s200/Titanium.jpg" /></a>
-</div>
-<div class="youtube" align="center"><iframe width="420" height="315" src="http://www.youtube.com/embed/dfI_DnGazwg" frameborder="0"></iframe></div><div class="sidebar">
-<p class="first sidebar-title">Sidebar Title</p>
-<p class="sidebar-subtitle">Optional Sidebar Subtitle</p>
-<p class="last">Subsequent indented lines comprise
-the body of the sidebar, and are
-interpreted as body elements.</p>
-</div>
-<div class="topic">
-<p class="topic-title first">Topic Title</p>
-<p>Subsequent indented lines comprise
-the body of the topic, and are
-interpreted as body elements.</p>
-</div>
-</div>
-  <footer>
-    <a rel="full-article" href="http://mde.cu.cc/posts/2013/08/test-new-fucntion/">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="http://mde.cu.cc/posts/2013/08/github page + pelican/">github page + pelican</a>
-      </h1>
+      <div>
+  <article class="hentry" role="article">
+    <header>
+          <h1 class="entry-title">github page + pelican</h1>
           <p class="meta"><time datetime="2013-08-01T10:58:04" pubdate>2013-08-01</time></p>
 </header>
 
@@ -120,96 +85,129 @@ interpreted as body elements.</p>
 </ul>
 <p>Pelican的功能與特點：</p>
 <ul class="simple">
-<li>基於python環境 ...</li></ul></div></div>
-  <footer>
-    <a rel="full-article" href="http://mde.cu.cc/posts/2013/08/github page + pelican/">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="http://mde.cu.cc/posts/2013/08/first-article/">first article</a>
-      </h1>
-          <p class="meta"><time datetime="2013-08-01T10:23:23" pubdate>2013-08-01</time></p>
-</header>
-
-  <div class="entry-content"><div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#pelican" id="id13">Pelican是什么</a></li>
-<li><a class="reference internal" href="#id1" id="id14">安装Pelican</a></li>
-<li><a class="reference internal" href="#id2" id="id15">启动博客</a></li>
-<li><a class="reference internal" href="#id3" id="id16">编辑文章</a></li>
-<li><a class="reference internal" href="#meta-data" id="id17">Meta-data</a><ul>
-<li><a class="reference internal" href="#id4" id="id18">代码高亮</a></li>
-<li><a class="reference internal" href="#id5" id="id19">内链</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id6" id="id20">基本设置</a><ul>
-<li><a class="reference internal" href="#id7" id="id21">绝对链接</a></li>
-<li><a class="reference internal" href="#id8" id="id22">使用主题</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id9" id="id23">从其它博客导入</a></li>
-<li><a class="reference internal" href="#id10" id="id24">多语言</a></li>
-<li><a class="reference internal" href="#id11" id="id25">常见问题</a></li>
-<li><a class="reference internal" href="#id12" id="id26">参考资源</a></li>
+<li>基於python環境，如Jinja2、pygments</li>
+<li>標記語言支持：reStructuredText、Markdown、AsciiDoc，支持自定義</li>
+<li>命令行操作</li>
+<li>主題/插件自定義</li>
+<li>文章可發佈多種語言版本</li>
+<li>Atom/RSS訂閱</li>
+<li>多種常用第三方服務集成：Github、Disqus、Google Analytics、Twitter</li>
 </ul>
 </div>
-<div class="section" id="pelican">
-<h2><a class="toc-backref" href="#id13">Pelican是什么</a></h2>
-<p>Pelican是一个静态博客生成器，具有常见博客系统如WordPress的基本功能，在功能、速度、开放性上更符合Geek们的口味。</p>
-<p>静态博客的优点：</p>
+<div class="section" id="install-pelican-windows">
+<h2><a class="toc-backref" href="#id2">Install Pelican(windows)</a></h2>
+<p>我是在windows底下測試，使用 <a class="reference external" href="http://www.pip-installer.org">pip</a> 安裝package</p>
+<pre class="code bash literal-block">
+pip install pelican
+pip install Markdown
+</pre>
+</div>
+<div class="section" id="start-pelican">
+<h2><a class="toc-backref" href="#id3">Start Pelican</a></h2>
+<p>首先創建一個博客目錄用於存放所有的文件,然後執行 <code>pelican-quickstart</code> 回答幾個基本的問題，執行完畢在目錄下就生成了基礎的文件和目錄如下：</p>
 <ul class="simple">
-<li>No-SQL。原始文章再也不是数据库表中的一个值，而是实实在在可以用任意编辑器编辑的纯文本文件，撰写、修改文章都不再依赖专门工具。</li>
-<li>源文件支持多种标记语言（与转换引擎相关），简化文章编辑。</li>
-<li>速度快。不再需要查询数据库，直接读取静态html，因此速度飞快。</li>
-<li>本地（同步）备份网站，网站迁移部署更灵活。</li>
+<li>content/，默認posts文檔（*.rst *.md *.html等等）存放目錄</li>
+<li>output/，默認靜態網站編譯輸出目錄，把該目錄下文件拷貝到任意開啟HTTPServer的目錄下並綁定好設置的域名即可訪問。</li>
+<li>Makefile，pelican使用make進行基本操作，請仔細閱讀該文件，瞭解常用的make選項。</li>
+<li>pelicanconf.py，pelican配置文件</li>
+<li>publishconf.py，發佈博客的配置文件，由make調用，可以自行設置</li>
+<li>develop_server.sh，測試pelican的腳本，由make調用，一般不需修改</li>
 </ul>
-<p>静态博客的缺点：</p>
+<p>常用的make選項：</p>
 <ul class="simple">
-<li>评论依赖外部服务。依赖第三方评论系统。</li>
-<li>修改设置，修改、发表文章大部分情况下需要编译整个网站。</li>
-<li>通常依赖命令行工具，具有一定技术门槛。</li>
+<li>make html，用pelican生成靜態網頁</li>
+<li>make remove，刪除輸出目錄的文件</li>
+<li>make serve，用 <code>python -m SimpleHTTPServer</code> 在輸出目錄運行HTTP服務，可以從 <code>localhost:8000</code> 訪問。</li>
+<li>make regenerate，自動檢測文件更新並重新生成html</li>
+<li>make devserver，運行HTTP服務並檢測文件更新，一旦更新就重新生成html</li>
+<li>make publish，發佈靜態網站</li>
+<li>make github，發佈到 <code>gh-pages</code></li>
 </ul>
-<p>Pelican的功能与特点：</p>
+</div>
+<div class="section" id="code-highlight">
+<h2><a class="toc-backref" href="#id4">Code highlight</a></h2>
+<p>pelican使用pygments來處理代碼高亮</p>
 <ul class="simple">
-<li>基于python环境，如Jinja2、pygments ...</li></ul></div></div>
-  <footer>
-    <a rel="full-article" href="http://mde.cu.cc/posts/2013/08/first-article/">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="http://mde.cu.cc/posts/2013/07/2013fall-second-article/">2013fall second article</a>
-      </h1>
-          <p class="meta"><time datetime="2013-07-31T00:00:00" pubdate>2013-07-31</time></p>
-</header>
+<li>reST格式高亮</li>
+</ul>
+<p>reST格式可以採用`code-block`原語，編輯時注意前後空行以及縮進與必要的空格（python在這方面很嚴格）</p>
+<div class="highlight"><pre><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> identifier
 
-  <div class="entry-content"><p>這裡是內容</p></div>
-  <footer>
-    <a rel="full-article" href="http://mde.cu.cc/posts/2013/07/2013fall-second-article/">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="http://mde.cu.cc/posts/2013/04/2013fall-first-article/">2013fall first article</a>
-      </h1>
-          <p class="meta"><time datetime="2013-04-18T00:00:00" pubdate>2013-04-18</time></p>
-</header>
+   &lt;indented code block goes here&gt;
+</pre></div>
+<p>輸出的html代碼為：</p>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;highlight&quot;</span><span class="nt">&gt;&lt;pre&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>..<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ow&quot;</span><span class="nt">&gt;</span>code-block<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>::<span class="nt">&lt;/span&gt;</span> identifier
 
-  <div class="entry-content"><p>這裡是內容</p></div>
-  <footer>
-    <a rel="full-article" href="http://mde.cu.cc/posts/2013/04/2013fall-first-article/">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  	<div class="pagination">
-      <a class="prev" href="http://mde.cu.cc/index2.html">&larr; Older</a>
-  
-    <br />
-</div>  </div>
+   <span class="ni">&amp;lt;</span>indented code block goes here<span class="ni">&amp;gt;</span>
+<span class="nt">&lt;/pre&gt;&lt;/div&gt;</span>
+</pre></div>
+<p>注意這裡CSS類是`highlight`。</p>
+<ul class="simple">
+<li>Markdown高亮</li>
+</ul>
+<p>Markdown需要經過python-markdown處理，並且需要codehilite擴展的支持，示例如下：</p>
+<p>方案一：</p>
+<div class="highlight"><pre>Some text.
+
+    :::python
+    def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+</pre></div>
+<p>輸出的html代碼為：</p>
+<div class="highlight"><pre><span class="nt">&lt;p&gt;</span>Some text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;codehilite&quot;</span><span class="nt">&gt;&lt;pre&gt;</span>
+<span class="nt">&lt;/pre&gt;&lt;/div&gt;</span>
+</pre></div>
+<p>方案二：</p>
+<div class="highlight"><pre>Some text.
+
+<span class="s">```python</span>
+<span class="s">def factorial(n):</span>
+<span class="s">if n == 0:</span>
+<span class="s">    return 1</span>
+<span class="s">else:</span>
+<span class="s">    return n * factorial(n - 1)</span>
+<span class="s">```</span>
+</pre></div>
+<p>兩種方案輸出的CSS類都是 <cite>codehilite</cite> 而不是 <cite>highlight</cite>，另外第一種方案必須縮進，第二種則不必。</p>
+</div>
+<div class="section" id="use-theme">
+<h2><a class="toc-backref" href="#id5">use theme</a></h2>
+<p>下載網友分享的自定義主題：</p>
+<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/getpelican/pelican-themes BLOGDIR/themes
+</pre></div>
+<p>在 <code>pelicanconf.py</code> 中添加 <code>THEME = &quot;./themes/THEMENAME&quot;</code></p>
+</div>
+<div class="section" id="dev-server">
+<h2><a class="toc-backref" href="#id6">dev server</a></h2>
+<p>移至你的pelican project裡的 output
+並執行cmd 使其可藉由 <code>localhost:8000</code> 端口開啟</p>
+<div class="highlight"><pre>python -m http.server
+</pre></div>
+</div>
+</div>
+    <footer>
+      <p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">Lee</span>
+  </span>
+  <time datetime="2013-08-01T10:58:04" pubdate>2013-08-01</time>    <span class="categories">
+        <a class="category" href="http://mde.cu.cc/tag/pelican.html">pelican</a>
+        <a class="category" href="http://mde.cu.cc/tag/github.html">github</a>
+        <a class="category" href="http://mde.cu.cc/tag/python.html">python</a>
+        <a class="category" href="http://mde.cu.cc/tag/.html"></a>
+      </span>
+  </p>    </footer>
+  </article>
+
+    <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+  </div>
       <aside class="sidebar">
   <section>
     <h1>Recent Posts</h1>
@@ -311,6 +309,9 @@ interpreted as body elements.</p>
 	    } catch(err) {}
 	</script>
 	<script type="text/javascript">
+	            var disqus_identifier = 'http://mde.cu.cc/posts/2013/08/github page + pelican/';
+          var disqus_url = 'http://mde.cu.cc/posts/2013/08/github page + pelican/';
+	  var disqus_title = 'github page + pelican';
 	  	  var disqus_shortname = 'kmollee';
 	  (function() {
 	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
